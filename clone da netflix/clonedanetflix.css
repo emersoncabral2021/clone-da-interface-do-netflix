@@ -1,0 +1,119 @@
+/*variavel*/
+:root{
+    --vermelho: #ff0000;
+    --preto: #000000;
+ }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+body{
+    background-color: var(--preto);
+    
+
+}
+header #conteiner{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+}
+header .logo{
+    color:var(--vermelho);
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header nav a{
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 25px;
+    color: var(--vermelho);
+
+}
+header nav a:hover{
+   color: white;
+}
+.conteiner-filme:hover{
+    border: 2px white solid;
+    
+}
+
+.filmepri{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(https://occ-0-1068-1722.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbtFaB_jYC_fRR88zG33RV0QprPHE-wZMaRvc-u-4FjDCbsXhDhvPMC09tK6DC0d7rxwCFdKu6k4nRvrYNyopdynBslN.jpg?r=22c);
+    height: 450px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filmepri .titulo{
+    margin-top: 15%;
+    color: white;
+    font-size: 40px;
+}
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, .50);
+}
+.filmepri .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.botao:hover{
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transition: 0.5s ease all;
+}
+.botao i{
+    margin-right: 15px;
+}
+.filmepri .conteiner{
+    width: 70%;
+    margin-left: 15px;
+}
+.box-filme{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.conteiner-filme{
+    cursor: pointer;
+    margin: 2px; 
+}
+.carrosel-filme{
+    margin-top: 5px;
+    margin-left: 15px;
+    display: flex;
+     overflow-x: auto;
+    
+}
+
+.filme h1{
+    padding: 15px;
+    color: white;
+    font-size: 30px;
+    font-family:  Verdana, Geneva, Tahoma, sans-serif;
+}
+.descricao, .duracao{
+    font-size: 20px;
+    color: white;
+    
+}
+
+/*para tira barra de rolagem da section filme*/
+ .carrosel-filme::-webkit-scrollbar{
+     width: 0;
+ }
+ 

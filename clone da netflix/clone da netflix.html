@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clone da netflix</title>
+    <link rel="stylesheet" href="clonedanetflix.css">
+    <link rel="stylesheet" href="responsividade.css">
+    
+</head>
+<body>
+    <header>
+        <div id="conteiner">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="">Inicio</a>
+                <a href="">Filmes</a>
+                <a href="">Animes</a>
+                <a href="">Series</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filmepri" id="filmepri">
+            <div class="conteiner">
+                <h3 class="titulo" >Detenção de Risco</h3>
+                <p class="descricao">
+                    Um jovem agente da CIA é encarregado de cuidar de um fugitivo em uma casa segura. Mas quando a casa segura é atacada, ele se vê fugindo com sua carga.</p>
+                <p class="duracao">Duração: 1h 55min</p>
+                <div>
+            <button role="button" class="botao"><i class="fas fa-play"></i> assistir</button>
+            <button role="button" class="botao"><i class="fas fa-info"></i> mais informação</button>  
+                </div>
+            </div>
+          
+        </div>
+    </main>
+    <section class="filme">
+        <h1>filmes:</h1> 
+        
+        <div class="carrosel-filme" id="carrosel-filme" >
+            <div class="conteiner-filme" onclick="selecionarfilme(0)">
+                <img  src="https://m.media-amazon.com/images/M/MV5BMjQ5NjA2NDg1MV5BMl5BanBnXkFtZTgwMDAzNDc4MjI@._V1_UX182_CR0,0,182,268_AL_.jpg">
+            </div>
+            <div class="conteiner-filme" onclick="selecionarfilme(1)">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzE2ZjQxNjEtNmI2ZS00ZmU0LTg4M2YtYzVhYmRiYWU0YzI1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg">
+            </div>
+             <div class="conteiner-filme" onclick="selecionarfilme(2)"> 
+                <img src="https://m.media-amazon.com/images/M/MV5BMTdkOTEwYjMtNDA1YS00YzVlLTg0NWUtMmQzNDZhYWUxZmIyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg">
+            </div>
+            <div class="conteiner-filme" onclick="selecionarfilme(3)">
+                <img src="https://m.media-amazon.com/images/M/MV5BNzUyODk4OTkxNF5BMl5BanBnXkFtZTgwMzY0MDgzNTM@._V1_UX182_CR0,0,182,268_AL_.jpg">
+            </div>
+            <div class="conteiner-filme" onclick="selecionarfilme(4)">
+                <img src="https://m.media-amazon.com/images/M/MV5BNDJiZDliZDAtMjc5Yy00MzVhLThkY2MtNDYwNTQ2ZTM5MDcxXkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_UX182_CR0,0,182,268_AL_.jpg">
+            </div>
+            <div class="conteiner-filme" onclick="selecionarfilme(5)">
+                <img src="https://m.media-amazon.com/images/M/MV5BYzBhOWU4ODAtZDYzYi00NDU1LWIzZWUtNDZmMDgxODljZTVmXkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_UX182_CR0,0,182,268_AL_.jpg">
+            </div>
+            <div class="conteiner-filme" onclick="selecionarfilme(6)">
+                <img src="https://m.media-amazon.com/images/M/MV5BMDJiNzUwYzEtNmQ2Yy00NWE4LWEwNzctM2M0MjE0OGUxZTA3XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg">
+            </div>
+            <div class="conteiner-filme" onclick="selecionarfilme(7)">
+                <img src="https://m.media-amazon.com/images/M/MV5BODU4MzM2MDAxMl5BMl5BanBnXkFtZTgwNDEzNjM0NzM@._V1_UX182_CR0,0,182,268_AL_.jpg">
+            </div>
+            <div class="conteiner-filme" onclick="selecionarfilme(8)">
+                <img src="https://m.media-amazon.com/images/M/MV5BODQ0NDhjYWItYTMxZi00NTk2LWIzNDEtOWZiYWYxZjc2MTgxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg">
+            </div>
+            <div class="conteiner-filme" onclick="selecionarfilme(9)">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_UX182_CR0,0,182,268_AL_.jpg">
+            </div> 
+        </div>
+    </section>
+
+
+
+
+ 
+    <!-- link para icons do site fontawesome :<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+-->
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
