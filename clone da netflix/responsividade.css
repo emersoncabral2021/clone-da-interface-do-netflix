@@ -8,9 +8,10 @@
         width: 300px;
         
        }
-}
-@media screen and (max-width:1000px){
-    .descricao{
-        width: 50%;
+       .descricao{
+        width: 100%;
+
     }
 }
+
+
