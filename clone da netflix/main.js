@@ -55,7 +55,7 @@ var titulo = document.querySelector(".titulo")
 var descricao = document.querySelector(".descricao")
 var duracao = document.querySelector(".duracao")
 var filmepri = document.getElementById('filmepri')
-
+var rolagem = 1
 function selecionarfilme(n){
     filmepri.style.background ="linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(" + filmes[n].img + ") "
     filmepri.style.backgroundSize = "cover"
@@ -66,8 +66,26 @@ function selecionarfilme(n){
     
 
 }
-
-function btndireita(){
-    let carrossel = document.getElementById("carrosel-filme")
-    carrossel.style.scrollBehavior = "15px"
+ 
+function scroll(element){
+    document.querySelector(element).scrollIntoView({behavior: "smooth"})
 }
+document.querySelector('#roldireita').addEventListener("click", function (event){
+    event.preventDefault()
+    scroll("#fil"+ rolagem)
+    rolagem++
+    if(rolagem > 4){
+        rolagem =  1
+    }
+
+})
+document.querySelector('#rolesquerda').addEventListener("click", function (event){
+    event.preventDefault()
+    scroll("#fil"+ rolagem)
+    rolagem--
+    if(rolagem < 1){
+        rolagem =  4
+    }
+    console.log(rolagem)
+
+})
