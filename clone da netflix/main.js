@@ -73,19 +73,20 @@ function scroll(element){
 document.querySelector('#roldireita').addEventListener("click", function (event){
     event.preventDefault()
     scroll("#fil"+ rolagem)
-    rolagem++
-    if(rolagem > 4){
+    if(rolagem == 4){
         rolagem =  1
+    }else{
+        rolagem = 4
     }
 
 })
 document.querySelector('#rolesquerda').addEventListener("click", function (event){
     event.preventDefault()
     scroll("#fil"+ rolagem)
-    rolagem--
-    if(rolagem < 1){
+    if(rolagem == 1){
         rolagem =  4
+    }else{
+        rolagem = 1
     }
-    console.log(rolagem)
 
 })
