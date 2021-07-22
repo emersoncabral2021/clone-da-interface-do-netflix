@@ -70,6 +70,8 @@ function selecionarfilme(n){
 function scroll(element){
     document.querySelector(element).scrollIntoView({behavior: "smooth"})
 }
+
+
 document.querySelector('#roldireita').addEventListener("click", function (event){
     event.preventDefault()
     scroll("#fil"+ rolagem)
@@ -78,7 +80,6 @@ document.querySelector('#roldireita').addEventListener("click", function (event)
     }else{
         rolagem = 4
     }
-
 })
 document.querySelector('#rolesquerda').addEventListener("click", function (event){
     event.preventDefault()
