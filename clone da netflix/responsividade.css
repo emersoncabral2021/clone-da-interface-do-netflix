@@ -12,10 +12,14 @@
         width: 100%;
 
     }
-    #bnt-direito, #bnt-esquerdo{
-       display: none;
     
-    }
 }
 
-
+@media screen and (max-width:450px ){
+    header nav a{
+     margin-right: 25px;
+     font-size: 15px;
+ 
+ }
+   
+ }

@@ -107,6 +107,7 @@ header nav a:hover{
     color: white;
     font-size: 30px;
     font-family:  Verdana, Geneva, Tahoma, sans-serif;
+    display: inline;
 }
 .descricao, .duracao{
     font-size: 20px;
@@ -114,25 +115,17 @@ header nav a:hover{
     
 }
 #bnt-direito, #bnt-esquerdo{
-    font-size: 60px;
-    background-color: rgba(255, 255, 255, 0.507);
+    font-size: 25px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    color: black;
     border-radius: 5px;
-    height: 80px;
-    position: absolute;
-    margin-top: 100px;
-
+    width: 50px;
+   
 }
 i{
         color: var(--preto);
 
-}
-#bnt-esquerdo{
-    left: 19px;
-    
-}
-#bnt-direito{
-    right: 0;
-    
 }
 
 /*para tira barra de rolagem da section filme*/
